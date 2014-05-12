@@ -1,0 +1,21 @@
+***************************************************************************** * The following report is provisional, pending final review by the physician  ***************************************************************************** 
+
+                        NORTHWESTERN MEMORIAL HOSPITA                                PROCEDURE REPOR                                 DATE:  01/01/0 
+NAME:  Last, First                          HOSPITAL #:  00000000-000 
+SURGEON:  Anton Gutman, MD                        BILLING #:  00000000000 
+PATIENT TYPE:  O                            PATIENT LOC:  POU 
+PREOPERATIVE DIAGNOSIS:  Colon polyp 
+POSTOPERATIVE DIAGNOSIS:  Colon polyp 
+OPERATION:  COLONOSCOPY AND LEFT POLYPECTOMY 
+INDICATIONS:  This is a 55-year-old man who was noted to have a recta polyp on flexible sigmoidoscopy as screening. There is no family history o colon cancer. The patient is asymptomatic 
+QUALITY OF PREP: good
+PROCEDURE:  After premedication with a total of 3 mg intravenous Versed an 50  g intravenous fentanyl, the Pentax video colonoscope was inserted an was advanced to the cecum. The cecum was identified by the ileocecal valve The cecum, ascending colon, transverse colon, descending colon and sigmoi colon were normal. In the rectum at approximately 10 cm, there was a 1-c polyp on a short stalk. It was snared, electrocoagulated and removed. Ther was no bleeding.  The patient tolerated the procedure well 
+IMPRESSION:  Rectal polyp 
+PLAN:  Will assess the histology. A followup colonoscopy may be needed i three to five years 
+
+/mrc  D: 08/21/00 T: 08/22/00                                   Doc#: 1111                                                                 J#:  2222 
+
+
+_____________________________________ Anton Gutman, M Dictated by: Anton Gutman, M 
+
+cc:   Bart Simpson, M       Anton Gutman, MD

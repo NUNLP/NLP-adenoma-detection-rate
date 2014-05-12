@@ -1,0 +1,50 @@
+apply plugin: 'groovy'
+apply plugin: 'eclipse'
+apply plugin: 'maven-publish'
+apply plugin: 'application'
+
+version = '1.0'
+group = 'edu.northwestern.fsm'
+
+mainClassName = "edu.northwestern.fsm.ColonTextProcessor"
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) { from components.java }
+    }
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.1.6'
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.2.4'
+    compile group: 'com.google.guava', name: 'guava', version: '15.0'
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.1'
+    compile group: 'log4j', name: 'log4j', version: '1.2.9'
+    
+    compile group: 'org.apache.uima', name: 'uimaj-core', version: '2.5.0'
+    compile group: 'org.apache.uima', name: 'uimafit-core', version: '2.0.0'
+    compile group: 'org.apache.uima', name: 'uimaj-document-annotation', version: '2.5.0'
+
+    compile group: 'org.apache.opennlp', name: 'opennlp-tools', version: '1.5.3'
+    compile group: 'org.apache.opennlp', name: 'opennlp-uima', version: '1.5.3'
+    compile group: 'org.apache.opennlp', name: 'opennlp-maxent', version: '3.0.3'
+
+    compile fileTree(dir: 'lib', include: '*.jar')
+
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+    testCompile group: 'org.apache.uima', name: 'uimaj-tools', version: '2.5.0'
+    testCompile group: 'org.apache.uima', name: 'uimaj-tools', version: '2.5.0'
+}
+
+task uberjar(type: Jar) {
+    from files(sourceSets.main.output.classesDir)
+    from files(sourceSets.main.output.resourcesDir)
+    from {configurations.compile.collect {zipTree(it)}}
+
+    manifest { attributes 'Main-Class': 'edu.northwestern.fsm.ColonProcReportProcessor' }
+}

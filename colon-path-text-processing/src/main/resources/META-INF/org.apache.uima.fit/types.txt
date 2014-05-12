@@ -1,0 +1,4 @@
+classpath*:org/apache/ctakes/typesystem/types/TypeSystem.xml
+classpath*:descriptors/NegExTypeSystem.xml
+classpath*:descriptors/SegmenterTypeSystem.xml
+classpath*:descriptors/ColonPolypTypes.xml
